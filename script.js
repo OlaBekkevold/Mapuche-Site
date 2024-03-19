@@ -21,25 +21,42 @@ const questions = [
     }
 ];
 
+
+
+const questionTitle = document.getElementById("question");
+const options = document.querySelectorAll(".answerBtn");
 let score = 0;
-function increaseScore() {
-    score++;
-    console.log("Riktig svar! Din score er nå: " + score);
+let iteration = 0;
+
+questionTitle.innerHTML = questions[iteration].question;
+
+for (let i = 0; i < options.length; i++) {
+    options[i].innerHTML = questions[iteration].options[i];
 }
 
+options.forEach(option => {
+    option.addEventListener("click", () => {
+        const answer = option.innerHTML;
 
-let answer = "";
+        updateScore(answer)
+    })
+})
 
-answer = prompt(questions[0].question + "Svaralternativ: " + questions[0].options + "Skriv inn ditt svaralternativ");
+function updateScore(answer) {
+    console.log(answer)
+    if (answer === questions[iteration].answer) {
+        score++;
+        console.log("Riktig svar! Din score er nå: " + score);
 
+    } else {
+        console.log("Feil svar! Din score er: " + score);
+    }
+    iteration++;
+    console.log("Iteration: " + iteration);
 
-if (answer === questions[0].answer) {
-    increaseScore();
+    questionTitle.innerHTML = questions[iteration].question;
 
-} else {
-    console.log("Feil svar! Din score er: " + score);
+    for (let i = 0; i < options.length; i++) {
+        options[i].innerHTML = questions[iteration].options[i];
+    }
 }
-
-
-
-
