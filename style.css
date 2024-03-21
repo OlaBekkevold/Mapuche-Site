@@ -36,3 +36,28 @@
     width: 500px;
     height: 300px;
 }
+
+.navTitle {
+    position: absolute;
+    left: 41%;
+    top: -22%;
+}
+
+.navbar {
+    background-color: red;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8%;
+}
+
+.content {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    width: 100%;
+    height: 90%;
+
+}
