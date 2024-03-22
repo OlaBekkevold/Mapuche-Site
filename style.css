@@ -2,8 +2,8 @@
     font-size: 50px;
     color: #000000;
     text-align: center;
-    font-family: 'Lobster', cursive;
-    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    margin-top: 68px;
 }
 
 .box {
@@ -39,7 +39,7 @@
 
 .navTitle {
     position: absolute;
-    left: 41%;
+    left: 45%;
     top: -22%;
 }
 
@@ -60,4 +60,38 @@
     width: 100%;
     height: 90%;
 
+}
+
+#quizBox {
+    position: absolute;
+    background-color: gray;
+    top: 31%;
+    left: 37%;
+    width: 28%;
+    height: 17%;
+    border-radius: 10px;
+}
+
+#question {
+    position: absolute;
+    top: -6%;
+    left: 13%;
+}
+
+#buttons {
+    position: absolute;
+    top: 50%;
+    left: 11%;
+}
+
+#scoreCount {
+    position: absolute;
+    top: 55%;
+    left: 45%;
+}
+
+#restartBtn {
+    position: absolute;
+    top: 70%;
+    left: 47%;
 }
