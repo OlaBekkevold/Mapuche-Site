@@ -48,7 +48,7 @@ options.forEach(option => {
 })
 
 // Restart the quiz
-restartBtn.addEventListener("click", () => {
+function reset() {
     iteration = 0;
     score = 0;
 
@@ -58,10 +58,14 @@ restartBtn.addEventListener("click", () => {
     for (let i = 0; i < options.length; i++) {
         options[i].innerHTML = questions[iteration].options[i];
     }
-})
+
+}
+
+restartBtn.addEventListener("click", reset);
 
 function updateScore(answer) {
     console.log(answer)
+    // Check if the answer is correct
     if (answer === questions[iteration].answer) {
         score++;
         console.log("Riktig svar! Din score er nå: " + score);
@@ -70,13 +74,20 @@ function updateScore(answer) {
         console.log("Feil svar! Din score er: " + score);
     }
 
+    // Update the question and options
     iteration++;
     console.log("Iteration: " + iteration);
+    // Check if the quiz is finished
+    if (iteration >= questions.length) {
+        alert("Du har fullført quizen! Din score er: " + score + " av " + questions.length);
+        reset();
+    } else {
+        questionTitle.innerHTML = questions[iteration].question;
+        scoreCounter.innerHTML = "Din score er " + score + " av " + questions.length;
 
-    questionTitle.innerHTML = questions[iteration].question;
-    scoreCounter.innerHTML = "Din score er " + score + " av " + questions.length;
-
-    for (let i = 0; i < options.length; i++) {
-        options[i].innerHTML = questions[iteration].options[i];
+        for (let i = 0; i < options.length; i++) {
+            options[i].innerHTML = questions[iteration].options[i];
+        }
     }
+
 }
