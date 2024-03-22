@@ -15,16 +15,34 @@ const questions = [
         options: ["1814", "1818", "1809", "1825"],
         answer: "1818"
     },
-    {
-        question: "Var det et skriftsystem før spanskene kom?",
-        options: ["Ja", "Nei"],
-        answer: "Nei"
-    },
+
     {
         question: "Hvilken by gis det morsmålopplæring?",
         options: ["Temyo", "Tokyo", "Temuco", "Yotemu"],
         answer: "Temuco"
+    },
+    {
+        question: "Hvor mange Mapucher finnes?",
+        options: ["2,9 millioner", "1,9 millioner", "1,7 millioner", "1,5 millioner"],
+        answer: "1,9 millioner"
+    },
+    {
+        question: "Hvilken region er det Mapuchene tradisjonelt tilhører?",
+        options: ["Amazonas", "Araucana", "Patagonia", "Andesfjellene"],
+        answer: "Araucana"
+    },
+
+    {
+        question: "Hva er det Mapuchene i hovedsak ønsker?",
+        options: ["Selvstendighet", "Land rettigheter", "Penger", "Ingen av delene"],
+        answer: "Land rettigheter"
+    },
+    {
+        question: "Hvilket norsk selskap har blitt kritisert for behandlingen av Mapuchene? ",
+        options: ["Orkla", "Norgesgruppen", "Telenor", "Equinor"],
+        answer: "Equinor"
     }
+
 ];
 
 
