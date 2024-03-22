@@ -1,24 +1,29 @@
 // An array of all the questions, options and answers
 const questions = [
     {
-        question: "Hvor mange folk består Mapuche folket av?",
-        options: ["1,9 millioner", "1,7 millioner", "2 millioner", "1,5 millioner"],
-        answer: "1,9 millioner"
+        question: "Hvilken verdensdel er opprinnelsen av Mapuchefolket?",
+        options: ["Asia", "Africa", "Sør-America", "Europa"],
+        answer: "Sør-America"
     },
     {
-        question: "What is the capital of Germany?",
-        options: ["Paris", "London", "Berlin", "Rome"],
-        answer: "Berlin"
+        question: "Hvem var den spanske governøren som døde i 1598?",
+        options: ["Diago Santos", "Pelantaro", "Amigo", "Fernandes"],
+        answer: "Pelantaro"
     },
     {
-        question: "What is the capital of Italy?",
-        options: ["Paris", "London", "Berlin", "Rome"],
-        answer: "Rome"
+        question: "Når ble Chile selvstendig?",
+        options: ["1814", "1818", "1809", "1825"],
+        answer: "1818"
     },
     {
-        question: "What is the capital of England?",
-        options: ["Paris", "London", "Berlin", "Rome"],
-        answer: "London"
+        question: "Var det et skriftsystem før spanskene kom?",
+        options: ["Ja", "Nei"],
+        answer: "Nei"
+    },
+    {
+        question: "Hvilken by gis det morsmålopplæring?",
+        options: ["Temyo", "Tokyo", "Temuco", "Yotemu"],
+        answer: "Temuco"
     }
 ];
 
