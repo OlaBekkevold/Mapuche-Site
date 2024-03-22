@@ -27,6 +27,7 @@ const questions = [
 const questionTitle = document.getElementById("question");
 const options = document.querySelectorAll(".answerBtn");
 const scoreCounter = document.getElementById("scoreCount");
+const restartBtn = document.getElementById("restartBtn");
 let score = 0;
 let iteration = 0;
 
@@ -44,6 +45,19 @@ options.forEach(option => {
 
         updateScore(answer)
     })
+})
+
+// Restart the quiz
+restartBtn.addEventListener("click", () => {
+    iteration = 0;
+    score = 0;
+
+    questionTitle.innerHTML = questions[iteration].question;
+    scoreCounter.innerHTML = "Din score er " + score + " av " + questions.length;
+
+    for (let i = 0; i < options.length; i++) {
+        options[i].innerHTML = questions[iteration].options[i];
+    }
 })
 
 function updateScore(answer) {

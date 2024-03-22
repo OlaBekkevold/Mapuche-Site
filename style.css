@@ -69,6 +69,7 @@
     left: 37%;
     width: 28%;
     height: 17%;
+    border-radius: 10px;
 }
 
 #question {
@@ -87,4 +88,10 @@
     position: absolute;
     top: 55%;
     left: 45%;
+}
+
+#restartBtn {
+    position: absolute;
+    top: 70%;
+    left: 47%;
 }
